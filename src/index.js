@@ -82,8 +82,8 @@ function playBuffer(buffer, callback) {
 let blocks;
 let tabTextOriginal;
 function playTab2() {
-  tabTextOriginal = textarea.innerHTML;
   blocks = parseTab(textarea.innerHTML);
+  tabTextOriginal = textarea.innerHTML;
   playBlock(blocks[0]);
 }
 

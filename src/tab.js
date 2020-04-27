@@ -117,6 +117,7 @@ export const tabNumToHz = (tabNum, stringNum) => {
 };
 
 const parseTab = () => {
+  textarea.innerHTML = textarea.innerHTML.replace(/[-][|][-]/g, '-');
   const tabText = textarea.innerHTML;
   console.log(tabText);
 
