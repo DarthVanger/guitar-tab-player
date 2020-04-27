@@ -84,13 +84,11 @@ let tabTextOriginal;
 function playTab2() {
   tabTextOriginal = textarea.innerHTML;
   blocks = parseTab(textarea.innerHTML);
-  console.log('blocks: ', blocks);
   playBlock(blocks[0]);
 }
 
 let blockNum = 0;
 function playBlock(tab) {
-  console.log('playting tab piece: ');
   console.log(tab);
   playedNotes = [[], [], [], [], [], []];
 

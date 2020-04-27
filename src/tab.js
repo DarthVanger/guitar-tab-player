@@ -90,7 +90,6 @@ textarea.innerHTML = `
 `.trim();
 
 export const tabNumToHz = (tabNum, stringNum) => {
-    console.log(`tabNumToHz(${tabNum}, ${stringNum})`);
     let stringPitch;
     switch(stringNum) {
       case 0:
@@ -119,7 +118,6 @@ export const tabNumToHz = (tabNum, stringNum) => {
 
 const parseTab = () => {
   const tabText = textarea.innerHTML;
-  console.log('tabText:');
   console.log(tabText);
 
   let isPartOfTab = true;
@@ -137,9 +135,6 @@ const parseTab = () => {
     const guitar = blocks[blockNum];
     guitar[stringNum] = l;
   });
-  console.log('lines: ', lines);
-  console.log('guitar: ', guitar);
-  console.log('blocks: ', blocks);
 
   return blocks;
 }
